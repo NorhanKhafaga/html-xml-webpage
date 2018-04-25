@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html,body{
+    margin: 0;
+    padding: 0;
+  }
+  /* =============================================
+    Global Styles
+  =================================================*/
+  nav, ul {
+    list-style: none;
+  }
+ h1, h2,h3, h4,h5,h6 p, a{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+h2{
+  font-size: 30px;
+  
+}
+h3{
+  margin:20px 0px;
+}
+p{
+  margin:20px 0px;
+}
+  .container{
+      max-width: 1200px;
+      margin:0 auto;
+      padding: 80px 80px;
+  }
+  @media (max-width: 800px) {
+  .row{
+    flex-direction: column;
+  }
+  h2{
+    margin:20px 0px;
+  }
+  }
+  /* columns and rows
+  =====================================*/
+ 
+  .col{
+      width:50%;
+  }
+  .col-2  {
+    width: 50%;
+  }
+  .col-3  {
+    width: 33.33%;
+  }
+  .col-4  {
+    width: 25%;
+  }
+  .col-5  {
+    width: 20%;
+  }
+  .col-6 {
+    width: 16.6%;
+  }
+  .row{
+    display: flex;
+    width:100%;
+
+  }
+    /* Main Responsive Table
+    ================================ */
+
+    .Rtable {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 0 3em 0;
+      padding: 0;
+      background: rgba(112, 128, 144, 0.2);
+      background: #fff;
+      border: solid 1px white;
+    }
+    .Rtable-cell {
+      box-sizing: border-box;
+      flex-grow: 1;
+      width: 100%;
+      padding: 0.8em 1.2em;
+      overflow: hidden;
+      list-style: none;
+      border: solid 1px #eee;
+      
+    
+    }
+    /* Table column sizing
+================================== */
+.Rtable--2cols > .Rtable-cell {
+  width: 50%;
+}
+.Rtable--3cols > .Rtable-cell {
+  width: 33.33%;
+}
+.Rtable--4cols > .Rtable-cell {
+  width: 25%;
+}
+.Rtable--5cols > .Rtable-cell {
+  width: 20%;
+}
+.Rtable--6cols > .Rtable-cell {
+  width: 16.6%;
+}
+/*test this */
+@media (max-width: 800px) {
+  .Rtable--collapse  {
+    display: block;
+   
+    
+  }
+  .Rtable--collapse   > .Rtable-cell { width: 100% !important; }
+  }
+
+  /*---------------------------------*/
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    text-align: center;
+    padding: 16px;
+}
+
+th:first-child, td:first-child {
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+/*-------------------------------------------*/
+.maintable{
+  margin: 10px 0px;
+  min-width: rem-calc(640);
+}
+.maintable td, .maintable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.maintable tr:nth-child(even){background-color: #f2f2f2;}
+
+.maintable tr:hover {background-color: #ddd;}
+
+.maintable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(118, 172, 243);
+  color: white;
+}
+@media (max-width: 800px) {
+  table.maintable{
+    width:100%;
+  }
+}
+ 
+  /* main header
+  ===============================================*/
+  header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    background-color: #eee;
+    color: #000;
+    box-sizing: border-box;
+    position: fixed;
+    top:0;
+  }
+  header nav{
+     display:flex;
+
+  }
+  
+  header h1 a{
+      text-decoration: none;
+      color: #000;
+  }
+  header nav li {
+    margin: 0 15px;
+    
+  }
+  header nav li a {
+    text-decoration: none;
+    font-size: 21px;
+    display: block;
+    padding: 20px 0px;
+    color: #000;
+  }
+  header nav li a:hover{
+      border-bottom: 3px solid rgb(118, 172, 243);
+  }
+  
+@media (max-width: 800px) {
+    header {
+      padding: 20px 50px;
+      flex-direction: column;
+    }
+    header h1 {
+      margin-bottom: 15px;
+      font-size: 32px;
+    }
+    header nav {
+      margin-right: 0;
+      flex-direction: column;
+    }
+    header li {
+      font-size: 18px;
+    }
+  }
+  /* Hero section (about)
+  ==========================================================*/
+  .hero{
+     text-align: center;
+     padding: 90px;
+    
+  }
+  .hero h1{
+      font-size: 30px;
+      padding: 0;
+  }
+  .hero p{
+      font-size:24px;
+      margin: 20px 0px 0px 0px;
+  }
+  .hero .container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media (max-width: 800px) {
+    .hero h1{
+        font-size: 21px;
+        padding: 0;
+    }
+    .hero p{
+        font-size:19px;
+        margin: 20px 0px 0px 0px;
+    }
+  }
+  /*========================================================*/
+.publication{
+    background-color: rgb(171, 206, 245);
+}
+.publication P{
+    font-size: 22px;
+}
+a.btn{ 
+  padding:10px;
+  outline: 0;
+  border: 2px solid #fff;
+  font-size: 19px;
+  margin:30px 10px;
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(2, 5, 10);
+  transition: .2s ease-in;
+}
+
+.btn-white{
+  
+    background-color: #fff;
+}
+.btn-white:hover{
+  
+    color: rgb(7, 67, 136);
+}
+
+/* skills
+====================================================*/
+.skills{
+  color:#fff;
+  background-color: rgb(44, 44, 44);
+
+}
+.skills ul{
+  list-style-type: circle;
+}
+.skills ul li{
+  padding: 0px 0px 10px 0px;
+}
+/*===================================================*/
