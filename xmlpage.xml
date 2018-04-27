@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="stylesheet.xsl"?>
+
+<thesis>
+  <frontmatter>
+    <title>Your thesis title</title>
+    <university>University name </university>
+    <authors>
+      <author fname="first name" lname="last name" val='1'/>
+      <email val='1' >name@mail.com</email>
+    </authors>
+    <year>2018 </year>
+  </frontmatter>
+  <main>
+    <abstract>
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum explicabo maxime veritatis doloremque quod optio hic, nisi facilis possimus fugit quidem voluptatibus cum rem laborum omnis esse deleniti harum a.
+</abstract>
+    <keywords>
+      <keyword val='1'>keyword1</keyword>
+      <keyword val='2'>keyword1</keyword>
+      <keyword val='3'>keyword1</keyword>
+    </keywords>
+    <introduction>
+      <heading>introduction</heading>
+      <paragraph>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, illum. Quos distinctio perspiciatis quas, magni excepturi recusandae quasi voluptas asperiores corrupti iure non laudantium, possimus molestiae minima autem, beatae iste?
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore reiciendis dolorum, rem, ratione quos quae nisi in quasi iste rerum placeat distinctio consectetur ea quam alias veniam amet voluptates debitis.
+</paragraph>
+    </introduction>
+    <relatedwork>
+      <heading>relatedwork</heading>
+      <paragraph>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore delectus eius eos illo veniam est numquam officiis perferendis, ad incidunt tempora minus, magni exercitationem maxime repellat? Dolorem quaerat totam provident!
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus maiores natus aperiam facere. Quas doloribus amet beatae saepe ex rerum expedita laborum quae! Possimus dolorum praesentium facere repudiandae. Accusamus, quisquam.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, voluptatum repudiandae aperiam quidem excepturi adipisci ab molestiae optio recusandae totam cupiditate ipsam asperiores quo distinctio perspiciatis ratione, ex in tempora.
+</paragraph>
+    </relatedwork>
+    <method>
+      <heading>method</heading>
+      <paragraph>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aut, illo, debitis nam quos ipsam cumque fugit facilis explicabo accusantium possimus impedit voluptatibus commodi repudiandae minima ullam aliquam, illum sequi!
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eius modi fugiat autem aliquid omnis aut vitae rerum voluptatum quidem ratione, quas voluptas maiores ipsam consequatur. Ullam iure repellendus quaerat.
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil sunt molestiae vitae recusandae itaque vero sed sapiente. Magnam incidunt deserunt cum in excepturi! Necessitatibus fuga dolorum ad et? At, illum.
+
+        </paragraph>
+    </method>
+
+
+
+
+    <results>
+      <heading>results</heading>
+      <paragraph>
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita dicta, ut aut sapiente voluptas minus eveniet doloremque? Adipisci, maiores dignissimos sunt atque repudiandae voluptate, iusto molestias tempora eius ad sequi!
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque facere nemo dolorem ut cupiditate. Exercitationem deserunt, ab unde magnam ea dolore libero voluptate commodi, laboriosam facilis praesentium, aut voluptatibus accusantium!
+</paragraph>
+    </results>
+
+
+
+    <Conclusions>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aliquid natus assumenda quo, quia excepturi. Corrupti a dicta voluptatum itaque aliquid, nesciunt tenetur repellendus culpa ipsum, necessitatibus nihil fuga architecto.</Conclusions>
+  <references>
+    <reference number='1'>Lorem ipsum dolor sit amet</reference>
+    <reference number='2'>Lorem ipsum dolor sit amet</reference>
+    <reference number='3'>Lorem ipsum dolor sit amet</reference>
+    <reference number='4'>Lorem ipsum dolor sit amet</reference>
+    <reference number='5'>Lorem ipsum dolor sit amet</reference>
+  </references>
+    </main>
+
+</thesis>

@@ -20,12 +20,18 @@
 </head>
 
 <body>
-    <header>
+        <div class="toggle" onclick="toggleFunc()">
+                <span></span>
+                <span></span>
+                <span></span>
+        </div>
+    <header id="mainheader">
         <!--
         <h1>
             <a href="">Your name</a>
         </h1>
     -->
+ 
         <nav>
             <li>
                 <a href="#about">about</a>
@@ -53,7 +59,8 @@
             </p>
         </div>
     </section>
-    <!--Publication section-->
+    <!--Publication section
+    ===========================================================================-->
     <section class="sec publication" id="publication">
         <div class="container">
             <div class="row">
@@ -73,7 +80,8 @@
     </section>
 
 
-    <!--Courses Table section-->
+    <!--Courses Table section
+    ==========================================================================-->
     <section class="sec course" id="course">
         <div class="container">
             <div class="row">
@@ -169,7 +177,8 @@
 
     </section>
 
-      <!--Publication section-->
+      <!--Skills section
+    =======================================================================-->
       <section class="sec skills">
             <div class="container">
                 <div class="row">
@@ -192,7 +201,8 @@
         </section>
   
 
-      <!--Articles section-->
+      <!--Articles section
+    ===========================================================================-->
       <section class="sec blog-article" id="articles">
         <div class="container">
             <div class="row">
@@ -200,19 +210,19 @@
                     <h2>Articles</h2>
                 </div>
                 <div class="col">
-                    <div class="article-post">
+                    <article class="article-post">
                         <div class="article-img">
                                 <img src="https://source.unsplash.com/n8Qb1ZAkK88">
                         </div>
                         <div class="article-info">
                                 <h4>Article Title</h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat harum velit quis minus beatae laudantium ad ipsam libero quibusdam perspiciatis facilis recusandae aut nesciunt et necessitatibus, dolor eius itaque ratione.</p>
-                        </div>
+                        </div >
                         
-                    </div>
+                </article>
 
 
-                    <div class="article-post">
+                    <article  class="article-post">
                             <div class="article-img">
                                     <img src="https://source.unsplash.com/n8Qb1ZAkK88">
                             </div>
@@ -221,9 +231,9 @@
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat harum velit quis minus beatae laudantium ad ipsam libero quibusdam perspiciatis facilis recusandae aut nesciunt et necessitatibus, dolor eius itaque ratione.</p>
                             </div>
                             
-                        </div>
+                        </article >
 
-                        <div class="article-post">
+                        <article  class="article-post">
                                 <div class="article-img">
                                         <img src="https://source.unsplash.com/n8Qb1ZAkK88">
                                 </div>
@@ -232,12 +242,13 @@
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat harum velit quis minus beatae laudantium ad ipsam libero quibusdam perspiciatis facilis recusandae aut nesciunt et necessitatibus, dolor eius itaque ratione.</p>
                                 </div>
                                 
-                    </div>
+                    </article >
                 </div>
             </div>
     
         </section>
-
+   <!-- footer -contact information
+   =======================================================================-->
         <footer id="contact">
             <div class="container">
                     <h3>copyright &copy; name </h3>
@@ -250,6 +261,19 @@
            
         </footer>
 
+
+
+        <!-- script
+        =======================================================================-->
+        
+        <script>
+           function toggleFunc(){
+                var headernav=document.getElementById("mainheader");
+                headernav.classList.toggle("active");
+               }
+        
+        </script>
+    
 </body>
 
 </html>

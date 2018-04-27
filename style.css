@@ -31,89 +31,52 @@ p{
       margin:0 auto;
       padding: 80px 80px;
   }
-  @media (max-width: 800px) {
-  .row{
-    flex-direction: column;
-  }
-  h2{
-    margin:20px 0px;
-  }
-  }
   /* columns and rows
   =====================================*/
  
   .col{
-      width:50%;
-  }
-  .col-2  {
-    width: 50%;
-  }
-  .col-3  {
-    width: 33.33%;
-  }
-  .col-4  {
-    width: 25%;
-  }
-  .col-5  {
-    width: 20%;
-  }
-  .col-6 {
-    width: 16.6%;
-  }
+    width:50%;
+}
+.col-2  {
+  width: 50%;
+}
+.col-3  {
+  width: 33.33%;
+}
+.col-4  {
+  width: 25%;
+}
+.col-5  {
+  width: 20%;
+}
+.col-6 {
+  width: 16.6%;
+}
+.row{
+  display: flex;
+  width:100%;
+
+}
+  @media (max-width: 800px) {
+    .container{
+      width: 100%;
+      padding:0px 40px;
+    }
+ 
   .row{
-    display: flex;
+    flex-direction: column;
     width:100%;
 
   }
-    /* Main Responsive Table
-    ================================ */
+  .col{
+    width:100%;
+}
+  h2{
+    margin:20px 0px;
+  }
+  }
+  
 
-    .Rtable {
-      display: flex;
-      flex-wrap: wrap;
-      margin: 0 0 3em 0;
-      padding: 0;
-      background: rgba(112, 128, 144, 0.2);
-      background: #fff;
-      border: solid 1px white;
-    }
-    .Rtable-cell {
-      box-sizing: border-box;
-      flex-grow: 1;
-      width: 100%;
-      padding: 0.8em 1.2em;
-      overflow: hidden;
-      list-style: none;
-      border: solid 1px #eee;
-      
-    
-    }
-    /* Table column sizing
-================================== */
-.Rtable--2cols > .Rtable-cell {
-  width: 50%;
-}
-.Rtable--3cols > .Rtable-cell {
-  width: 33.33%;
-}
-.Rtable--4cols > .Rtable-cell {
-  width: 25%;
-}
-.Rtable--5cols > .Rtable-cell {
-  width: 20%;
-}
-.Rtable--6cols > .Rtable-cell {
-  width: 16.6%;
-}
-/*test this */
-@media (max-width: 800px) {
-  .Rtable--collapse  {
-    display: block;
-   
-    
-  }
-  .Rtable--collapse   > .Rtable-cell { width: 100% !important; }
-  }
 
   /*---------------------------------*/
   table {
@@ -174,13 +137,53 @@ tr:nth-child(even) {
     color: #000;
     box-sizing: border-box;
     position: fixed;
-    top:0;
+    top:0px;
   }
-  header nav{
-     display:flex;
+  .toggle{
+    width:3rem;
+    height: 50px;
+    background-color: rebeccapurple;
+    position: fixed;
+    top:5px;
+    right: 5px;
+    z-index: 100;
+    border-radius: 5px;
+    padding:6px 0px;
+    display: none;
+    cursor: pointer;
+  }
+  .toggle span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:70%;
+    height: 5px;
+    background-color: #fff;
+    padding: 1px;
+    margin:5px auto;
+    text-align: center;
+  }
+  @media all and (max-width:800px){
+    .toggle{
+      display: block;
+    }
+  
+  /*
+    header nav{
+     display:none;
+
+  }*/
+}
+
+header nav{
+  display:flex;
+
+}
+ /* .active{
+    display:flex;
 
   }
-  
+  */
   header h1 a{
       text-decoration: none;
       color: #000;
@@ -202,6 +205,7 @@ tr:nth-child(even) {
   
 @media (max-width: 800px) {
     header {
+      display: none;
       padding: 20px 50px;
       flex-direction: column;
     }
@@ -215,6 +219,9 @@ tr:nth-child(even) {
     }
     header li {
       font-size: 18px;
+    }
+    .active{
+      display:flex;
     }
   }
   /* Hero section (about)
@@ -289,13 +296,13 @@ a.btn{
   padding: 0px 0px 10px 0px;
 }
 /*===================================================*/
-.blog-article{}
+
 .blog-article .article-post{
   margin: 0px 0px 10px 0px;
   padding:5px;
   border:1px solid #ddd;
 }
-.blog-article .article-post .article-info{}
+
 .blog-article .article-post .article-img{
   width:100%;
   height: 100%;
@@ -312,7 +319,7 @@ a.btn{
 footer{
   color:#fff;
   background-color: rgb(44, 44, 44);
-  padding: 10px 0px;
+  padding: 5px 0px;
  text-align: center;
 }
 
