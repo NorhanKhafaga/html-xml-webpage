@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
+<?xml-stylesheet type="text/xsl" href="transformation.xsl"?>
 
 <thesis>
   <frontmatter>
     <title>Your thesis title</title>
     <authors>
-      <author fname="first name" lname="last name" val='1'/>
+      <author name="your name" val='1'/>
       <email val='1' >name@mail.com</email>
     </authors>
     <university>University name </university>
     <year>2018 </year>
   </frontmatter>
   <main>
-    <abstract>
+  <abstract>
 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum explicabo maxime veritatis doloremque quod optio hic, nisi facilis possimus fugit quidem voluptatibus cum rem laborum omnis esse deleniti harum a.
 </abstract>
     <keywords>
