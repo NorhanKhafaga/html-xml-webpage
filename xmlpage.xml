@@ -4,11 +4,11 @@
 <thesis>
   <frontmatter>
     <title>Your thesis title</title>
-    <university>University name </university>
     <authors>
       <author fname="first name" lname="last name" val='1'/>
       <email val='1' >name@mail.com</email>
     </authors>
+    <university>University name </university>
     <year>2018 </year>
   </frontmatter>
   <main>
