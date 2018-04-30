@@ -27,9 +27,32 @@
       </xs:complexType>
       </xs:element><!--end of frontmatter -->
 
-    </xs:sequence>
+ 
+<!--main element 
+==================================-->
+
+<xs:element name="main">
+<xs:complexType>
+    <xs:sequence>
+  <xs:element name="abstract" type="xs:string"/>
+  <xs:element name="keywords">
+      <xs:complexType>
+        <xs:sequence>
+             <xs:element name="keyword" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      </xs:element><!--end of authors -->
+   
+
+
+   </xs:sequence><!--End of main -->
   </xs:complexType>
 </xs:element>
-<!--main element -->
 
+
+
+<!--================================================ -->
+   </xs:sequence><!--End of thesis -->
+  </xs:complexType>
+</xs:element>
 </xs:schema>

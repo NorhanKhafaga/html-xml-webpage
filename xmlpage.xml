@@ -15,6 +15,7 @@ xsi:schemaLocation="xmlSchema.xsd">
     <university>University name </university>
     <year>2018 </year>
   </frontmatter>
+  <!--Start of main body of thesis -->
   <main>
   <abstract>
 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum explicabo maxime veritatis doloremque quod optio hic, nisi facilis possimus fugit quidem voluptatibus cum rem laborum omnis esse deleniti harum a.
