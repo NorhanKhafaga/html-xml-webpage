@@ -70,7 +70,69 @@
                   </xs:complexType>
                     
                 </xs:element>
-                <!--end of authors -->
+                
+
+
+              <xs:element name="introduction">
+                <xs:complexType>
+                  <xs:sequence>
+                 <xs:element name="heading" type="xs:string"/>
+
+                 <xs:element name="paragraph" type="xs:string"/>
+                
+                 </xs:sequence>
+                  </xs:complexType>
+              </xs:element>
+
+  
+     <xs:element name="relatedwork">
+                <xs:complexType>
+                  <xs:sequence>
+                 <xs:element name="heading" type="xs:string"/>
+
+                 <xs:element name="paragraph" type="xs:string"/>
+                
+                 </xs:sequence>
+                  </xs:complexType>
+              </xs:element>
+              
+
+
+                   <xs:element name="method">
+                <xs:complexType>
+                  <xs:sequence>
+                 <xs:element name="heading" type="xs:string"/>
+
+                 <xs:element name="paragraph" type="xs:string"/>
+                
+                 </xs:sequence>
+                  </xs:complexType>
+              </xs:element>
+
+
+                   <xs:element name="results">
+                <xs:complexType>
+                  <xs:sequence>
+                 <xs:element name="heading" type="xs:string"/>
+
+                 <xs:element name="paragraph" type="xs:string"/>
+                
+                 </xs:sequence>
+                  </xs:complexType>
+              </xs:element>
+
+              <xs:element name="conclusion" type="xs:string"/>
+
+
+
+
+
+
+
+
+
+
+
               </xs:sequence>
               <!--End of main -->
             </xs:complexType>
