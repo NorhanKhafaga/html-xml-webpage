@@ -1,58 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<!--Thesis schema -->
-<xs:element name="thesis">
-<xs:complexType>
-    <xs:sequence>
-<!--frontmatter -->
-    <xs:element name="frontmatter">
+<xs:schema  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <!--Thesis schema -->
+  <xs:element name="thesis">
     <xs:complexType>
-    <xs:sequence>
-      <xs:element name="title" type="xs:string"/>
+      <xs:sequence>
+        <!--frontmatter -->
+        <xs:element name="frontmatter">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="title" type="xs:string"/>
+              <xs:element name="authors">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="author">
+                         <xs:complexType>
+                         <xs:sequence>
+                <xs:attribute name="name" type="xs:string" use="required"/>
+                           </xs:sequence>
+                              </xs:complexType>
+                    </xs:element><!--end of author -->
 
-      <xs:element name="authors">
-      <xs:complexType>
-        <xs:sequence>
-             <xs:element name="author" type="xs:string"/>
-             <xs:element name="email" type="xs:string"/>
+     <xs:element name="email">
+                         <xs:complexType>
+                         <xs:sequence>
+                <xs:attribute name="val" type="xs:interger" use="required"/>
+                           </xs:sequence>
+                              </xs:complexType>
+                    </xs:element><!--end of author -->
+
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <!--end of authors -->
+              <xs:element name="university" type="xs:string"/>
+              <xs:element name="date" type="xs:date"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <!--end of frontmatter -->
+      
+          <!--================================================ -->
+
+
+            <!--main element ==================================-->
+        <xs:element name="main">
+          <xs:complexType>
+            <!--main type -->
+            <xs:sequence>
+
+
+
+              <xs:element name="abstract" type="xs:string"/>
+
+
+              <xs:element name="keywords">
+                <xs:complexType>
+                  <xs:sequence>
+
+
+                    <xs:element name="keyword">
+                      <xs:complexType>
+                         <xs:sequence>
+                        <xs:attribute name="val" type="xs:integer" use="required"/>
+                     </xs:sequence>
+                      </xs:complexType>
+
+                  </xs:element><!--keywords -->
+                    </xs:sequence>
+                  </xs:complexType>
+                    
+                </xs:element>
+                <!--end of authors -->
+              </xs:sequence>
+              <!--End of main -->
+            </xs:complexType>
+          </xs:element>
         </xs:sequence>
+        <!--End of thesis -->
       </xs:complexType>
-      </xs:element><!--end of authors -->
-
-      <xs:element name="university" type="xs:string"/>
-      <xs:element name="date" type="xs:date"/>
-    
-    </xs:sequence>
-      </xs:complexType>
-      </xs:element><!--end of frontmatter -->
-
- 
-<!--main element 
-==================================-->
-
-<xs:element name="main">
-<xs:complexType>
-    <xs:sequence>
-  <xs:element name="abstract" type="xs:string"/>
-  <xs:element name="keywords">
-      <xs:complexType>
-        <xs:sequence>
-             <xs:element name="keyword" type="xs:string"/>
-        </xs:sequence>
-      </xs:complexType>
-      </xs:element><!--end of authors -->
-   
-
-
-   </xs:sequence><!--End of main -->
-  </xs:complexType>
-</xs:element>
-
-
-
-<!--================================================ -->
-   </xs:sequence><!--End of thesis -->
-  </xs:complexType>
-</xs:element>
-</xs:schema>
+    </xs:element>
+  </xs:schema>
